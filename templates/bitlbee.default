@@ -1,7 +1,7 @@
 ## /etc/default/bitlbee: Auto-generated/updated script.
 ##
 ## If running in (fork)daemon mode, listen on this TCP port.
-BITLBEE_PORT= {{ bitlbee_port }}
+BITLBEE_PORT={{ bitlbee_port }}
 
 ## Use single-process or forking daemon mode? Can't be changed from debconf,
 ## but maintainer scripts will save your changes here.
