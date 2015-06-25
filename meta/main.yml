@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Stefano Maffulli
+  description: "Deploy bitlbee, IRC to other chat networks gateway."
+  license: BSD
+  min_ansible_version: 1.8.2
+  platforms:
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+  categories:
+    - cloud
+dependencies: []
+  # List your role dependencies here, one per line. Only
+  # dependencies available via galaxy should be listed here.
+  # Be sure to remove the '[]' above if you add dependencies
+  # to this list.
+

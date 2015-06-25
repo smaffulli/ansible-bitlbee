@@ -1,0 +1,8 @@
+---
+# we don't want prompts, we want the passwords to be passed
+# from the bitlbee.yml file
+#vars_prompt:
+#  bitlbee_pass: "Enter the bitlbee server access password"
+#  # tWrfsuFj4aghUW3e
+#  bitlbee_oper_pass: "Enter the bitlbee operator password"
+#  # gC5nsFtP5XWz59k7
