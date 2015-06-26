@@ -1,3 +1,9 @@
 ---
   - name: restart bitlbee
     service: name=bitlbee state=restarted
+
+  - name: stop bitlbee
+    service: name=bitlbee state=stopped
+
+  - name: start bitlbee
+    service: name=bitlbee state=started

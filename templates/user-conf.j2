@@ -1,0 +1,15 @@
+<user nick="{{bitlbee_user}}" password="{{bitlbee_pass}}" version="1">
+    <setting name="last_version">197121</setting>
+    <account protocol="jabber" handle="{{jabber_handle}}" password="{{jabber_pwd}}" autoconnect="true" tag="jabber" server="{{jabber_server}}"/>
+    <channel name="&amp;bitlbee" type="control">
+        <setting name="auto_join">true</setting>
+    </channel>
+
+{% for chan in jabber_channels %}
+    <channel name="#{{chan}}" type="chat">
+        <setting name="account">jabber</setting>
+        <setting name="chat_type">room</setting>
+        <setting name="room">{{chan}}@{{jabber_conference}}conference.jabber.newdream.net</setting>
+    </channel>
+{% endfor %}
+
