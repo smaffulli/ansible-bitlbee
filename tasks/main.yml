@@ -20,6 +20,11 @@
     copy: src=bitlbee-motd.txt dest=/etc/bitlbee/motd.txt owner=root group=root mode=0644
     notify: restart bitlbee
 
+  - name: Configure bitlbee IM accounts
+    notify: stop bitlbee
+    template: src=user-conf.j2 dest=/var/lib/bitlbee/reed.xml owner=bitlbee group=bitlbee mode=0600
+    notify: start bitlbee
+
   - name: Run bitlbee service
     service: name=bitlbee enabled=yes state=started
 
