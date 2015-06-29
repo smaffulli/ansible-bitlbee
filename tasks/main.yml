@@ -22,7 +22,7 @@
 
   - name: Configure bitlbee IM accounts
     notify: stop bitlbee
-    template: src=user-conf.j2 dest=/var/lib/bitlbee/reed.xml owner=bitlbee group=bitlbee mode=0600
+    template: src=user-conf.j2 dest=/var/lib/bitlbee/{{bitlbee_user}}.xml owner=bitlbee group=bitlbee mode=0600
     notify: start bitlbee
 
   - name: Run bitlbee service
